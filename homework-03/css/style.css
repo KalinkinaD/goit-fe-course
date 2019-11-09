@@ -1,0 +1,120 @@
+html {
+    box-sizing:border-box
+  }
+  body {
+    font-family: 'Playfair Display', serif;
+      color: rgb(98, 98, 98);
+      font-size: 14px;
+      line-height: 24px;
+  }
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .container{
+    width: 900px;
+    margin: 0 auto;
+  }
+  .main-nav {
+    padding: 77px 0 75px 0;
+  }
+  .main-menu {
+    vertical-align: middle;
+      width: 901px;
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0px;
+  }
+  .main-menu li{
+  display: inline-block;
+  vertical-align: middle;
+  }
+  .main-menu a{
+    display: block;
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+  }
+  .main-menu a:hover{
+    color: rgb(3, 169, 244);
+  }
+  .main-menu li:nth-child(1){
+    margin-right: 121px;
+  }
+  .main-menu li:nth-child(2){
+    margin-right: 103px;
+  }
+  .main-menu li:nth-child(3){
+    margin-right: 95px;
+  }
+  .list{
+    list-style: none;
+    margin:0;
+    padding: 29px 0 0 0;
+    font-size: 0;    
+  }
+  article {
+    display: inline-block;
+      width: 420px;
+      margin-right: 60px;
+      margin-bottom:120px;
+  }
+  article:nth-child(2n){
+    margin-right: 0;
+  }
+  article:nth-child(5){
+    margin-bottom: 0;
+  }
+  article:nth-child(6){
+    margin-bottom: 0;
+  }
+  h2{
+    margin: 0px;
+      margin-bottom:30px;
+    font-size: 30px;
+    color: rgb(98, 98, 98);
+    line-height: 36px;
+  }
+  .list-item-name{
+    margin: 0;
+    margin-bottom: 30px;
+      padding-top:30px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 17px;
+  }
+  .list-item-text{
+    margin:0;
+      font-size: 14px;
+    color: rgb(98, 98, 98);
+    line-height: 24px;
+  }
+  button {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    width: 164px;
+    height: 60px;
+    border-width: 1px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid;
+    margin: 54px 379px 70px 358px;
+      padding: 19px 32px;
+    font-size: 20px;
+    color: rgb(98, 98, 98);
+    line-height: 24px;
+    background-color: white;
+    cursor: pointer;
+  }
+  button:hover,
+  button:focus{
+    background-color: rgb(3, 169, 244);
+  }
+  
