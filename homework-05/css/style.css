@@ -134,7 +134,7 @@ img{
     font-weight: 300;
 }
 .title{
-    margin: 0;
+    margin-bottom: 80px;
     padding: 0;
     text-align: center;
     font-size: 48px;
@@ -144,7 +144,7 @@ img{
     text-transform: uppercase;
 }
 .title::after{
-    margin: 34px 475px 80px 475px;
+    margin: 34px 475px 0px;
     width:160px;
     height: 7px;
     content: '';
