@@ -1,0 +1,324 @@
+html{
+box-sizing: border-box;
+margin: 0px 360px;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+.wrapper {
+width: 1200px;
+margin: 0px auto;
+}
+main {
+    flex-grow: 1;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* менюшка навигации */
+.page-nav {
+    display: flex;
+    width: 1201px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    align-items: flex-end;
+}
+.container ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+.navigation {
+    position: relative;
+    list-style: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #95e1d3;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 200ms linear;
+}
+.navigation::after {
+    background-color: #f38181;
+    display: block;
+    content: '';
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    margin-top: 12px;
+    transition: width 200ms linear;
+    transform: translateX(-50%);
+}
+.navigation:hover,
+.navigation:focus {
+    color: #f38181;
+}
+.navigation:hover::after,
+a.navigation:focus::after {
+    width: 100%;
+}
+.container li {
+  list-style: none;
+  margin-right: 60px; 
+}
+.container li:last-child {
+    margin-right: 0px;
+}
+.logo {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #95e1d3;
+  font-weight: bold;
+  line-height: 1.2;
+  /* animation: logo-appear 1s linear; АНИМАЦИЯ */
+}
+/*АНИМАЦИЯ
+ @keyframes logo-appear {
+    0% {
+        transform: translateY(-200%);
+    }
+
+    50% {
+        transform: translateY(0);
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+/* секция сервиса */
+.services {
+    padding-top: 113px;
+}
+.pre-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    line-height: 1.2;
+    }
+.title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.title::after {
+    margin: 42px auto 0px;
+    width: 60px;
+    height: 3px;
+    content: '';
+    display: block; 
+    background-color: rgb(243, 129, 129);
+}
+.icon{
+    padding-top: 18px;
+    height: 44px;
+    width: 70px;
+}
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 1182px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    min-height: 243px;
+}
+.services-list-item {
+    display: flex;
+    margin: auto;
+    flex-basis: 383px;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+/* секция команды */
+.team-title {
+    padding-top: 90px;
+}
+.team-title span {
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Roboto";
+    line-height: 1.6;
+   text-align: center;
+   margin-bottom: 93px;
+}
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.team li {
+    width: 380px;
+    height: 542px;
+    margin-bottom: 86px;
+}
+.first,
+.second,
+.third {
+    width: 380px;
+    height: 470px;
+}
+.first:hover,
+.second:hover,
+.third:hover {  
+    transform:translate(-10px,-10px);
+    transition: 200ms linear;  
+}
+.blue-screen {
+    background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
+}
+.overlay {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+.facebook {
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-color: rgb(243, 129, 129);
+    background-position: center;
+    opacity: 0;
+}
+.twitter {
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+    background-color: rgb(243, 129, 129);
+    background-position: center;
+    opacity: 0;
+}
+.pinterest {
+    background-image: url(../img/pinterest.png);
+    background-repeat: no-repeat;
+    background-color: rgb(243, 129, 129);
+    background-position: center;
+    opacity: 0;
+}
+.instagram {
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-color: rgb(243, 129, 129);
+    background-position: center;
+    opacity: 0;
+}
+.overlay-icon button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color:rgba(252, 227, 138, 1);
+    transition: backgroung-color 200ms linear;
+}
+.overlay-icon button:hover,
+.overlay-icon button:focus {
+    background-color: rgba(149, 225, 211, 1);
+}
+.overlay-icon:focus,
+.overlay-icon:hover {
+    background-color:rgba(149, 225, 211, 1);
+}
+.first:hover .facebook,
+.first:hover .twitter,
+.first:hover .pinterest,
+.first:hover .instagram {
+    opacity: 1;
+}
+.second:hover .facebook,
+.second:hover .twitter,
+.second:hover .pinterest,
+.second:hover .instagram {
+    opacity: 1;
+}
+.third:hover .facebook,
+.third:hover .twitter,
+.third:hover .pinterest,
+.third:hover .instagram {
+    opacity: 1;
+}
+.first:hover .overlay,
+.second:hover .overlay,
+.third:hover .overlay,
+.overlay:focus,
+.overlay:hover {
+    background-image: linear-gradient( 0deg,rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
+}
+main::after {
+    background-color: rgb(229, 229, 229);
+    width: 1200px;
+    height: 1px; 
+    content: '';
+    display: block;
+    }
+
+/* футер */
+.ftr {
+    display: flex;
+    min-height: 63px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+.ftr a {
+    text-decoration: none;
+    color: #f38181;
+}
+.ftr span {
+justify-content: flex-start;
+}
+.ftr form {
+    justify-content: flex-end;
+}
+.email {
+border-width: 1px;
+border-color: rgb(229, 229, 229);
+font-size: 15px;
+font-family: "Roboto";
+color: rgb(204, 204, 204);
+font-style: italic;
+line-height: 1.6;
+text-align: left;
+margin-right: 0px;
+width: 230px;
+height: 40px;
+}
+.button {
+margin-left: 0px;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(231, 231, 231);
+background-color: #95e1d3;
+width: 150px;
+height: 40px;
+transition: background-color 200ms linear;
+}
+.button:focus,
+.button:hover {
+    background-color: rgb(243, 129, 129);
+}
