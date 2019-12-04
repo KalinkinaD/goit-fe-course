@@ -100,26 +100,29 @@ html{
     } */
     
     /* секция сервиса */
-    .services {
+    .s-sec {
+        margin-bottom: 80px;
         padding-top: 113px;
     }
     .pre-title {
         display: block;
+        margin: 0;
+        padding: 0;
         text-transform: none;
         font-size: 24px;
-        font-family: "Kaushan Script";
+        font-family: "Kaushan Script", sans-serif;
         font-weight: 400;
         padding-bottom: 25px;
         }
     .title {
-        margin: 0;
-        padding: 0;
-      font-size: 30px;
-      font-family: "Montserrat";
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 700;
-      line-height: 36px;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: "Montserrat";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 36px;
     }
     .title::after {
         margin: 42px auto 0px;
@@ -129,35 +132,70 @@ html{
         display: block; 
         background-color: rgb(243, 129, 129);
     }
-    .icon{
-        padding-top: 18px;
-        height: 44px;
-        width: 70px;
-    }
+ 
     .services-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        flex-basis: 1182px;
-        margin: auto;
-        padding: 0;
-        padding-top: 62px;
+        /* flex-basis: 1182px; */
+        margin: 0;
+        padding: 66px 0px 0px 0px;
         list-style: none;
-        min-height: 243px;
+        /* min-height: 243px; */
     }
+
     .services-list-item {
-        display: flex;
-        margin: auto;
-        flex-basis: 383px;
+        margin-bottom: 100px;
     }
-    .flex-column {
-        display: flex;
-        flex-direction: column;
+    .services-card {
+    width: 340px;
+    position: relative;
+    padding-left: 62px;
+    background-repeat: no-repeat;
     }
+    .services-card::before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        left: 0;
+        width: 32px;
+        height: 32px;
+    }
+    .services-name {
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        color: #333333;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .services-descr {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        color: #9f9f9f;
+        font-size: 15px;
+    }
+    .icon-alarm {   
+        background-image: url(../img/ALARM.png);
+    }
+    .icon-linegrap {
+        background-image: url(../img/LINEGRAPH.png);
+    }
+.icon-computer {
+    background-image: url(../img/COMPUTER\ _\ OK.png);
+}
+.icon-book {
+    background-image: url(../img/BOOK\ 2.png);
+}
+.icon-home{
+    background-image: url(../img/HOME.png);
+}
+.icon-image {
+    background-image: url(../img/IMAGE.png);
+}
     /* секция команды */
-    .team-title {
-        padding-top: 90px;
-    }
+
     .team-descr {
         display: inline-block;
         font-size: 15px;
@@ -173,9 +211,7 @@ html{
         align-items: center;
         list-style: none;
         margin: 0;
-        padding: 0;
-        padding-bottom: 86px;
-       
+        padding: 0;       
     }
     .team li {
         width: 380px;
@@ -183,23 +219,17 @@ html{
     .team-section {
     padding-bottom: 86px;
     }
-    
-    .first,
-    .second,
-    .third {
+    .team-item {
         width: 380px;
         height: 470px;
+        transition: 200ms linear;    
     }
-    .first:hover,
-    .second:hover,
-    .third:hover {  
+    .team-item:hover { 
         transform:translate(-10px,-10px);
-        transition: 200ms linear;  
     }
     .blue-screen {
         background-color: #95e1d3;
         width: 380px;
-        height: 470px;
     }
     .overlay {
         position: absolute;
@@ -256,30 +286,38 @@ html{
     .overlay-icon:hover {
         background-color:rgba(149, 225, 211, 1);
     }
-    .first:hover .facebook,
-    .first:hover .twitter,
-    .first:hover .pinterest,
-    .first:hover .instagram {
+    .team-item:hover .facebook,
+    .team-item:hover .twitter,
+    .team-item:hover .pinterest,
+    .team-item:hover .instagram {
         opacity: 1;
     }
-    .second:hover .facebook,
-    .second:hover .twitter,
-    .second:hover .pinterest,
-    .second:hover .instagram {
-        opacity: 1;
-    }
-    .third:hover .facebook,
-    .third:hover .twitter,
-    .third:hover .pinterest,
-    .third:hover .instagram {
-        opacity: 1;
-    }
-    .first:hover .overlay,
-    .second:hover .overlay,
-    .third:hover .overlay,
+    .team-item:hover .overlay,
     .overlay:focus,
     .overlay:hover {
         background-image: linear-gradient( 0deg,rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
+    }
+    .team-name {
+        padding: 0;
+        margin: 0;
+        padding-top: 30px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333333;
+    }
+    .team-pos {
+     padding: 0;
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: #b9b9b9;
     }
     main::after {
         background-color: rgb(229, 229, 229);
