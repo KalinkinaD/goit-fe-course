@@ -258,3 +258,15 @@ textarea {
 .btn:focus {
     background-color: #c79b0c;
 }
+.contacts-form input:invalid {
+    outline: 2px solid red;
+}
+.contacts-form input:valid {
+    outline: 2px solid green;
+}
+.contacts-form textarea:invalid {
+    outline: 2px solid red;
+}
+.contacts-form textarea:valid {
+    outline: 2px solid green;
+}
