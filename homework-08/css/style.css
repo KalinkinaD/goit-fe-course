@@ -319,6 +319,18 @@ margin-bottom: 30px;
     width: 198px;
     height: 40px;
   }
+  .partner-item:nth-child(1){
+    order: 1;
+  }
+  .partner-item:nth-child(2){
+    order: 3;
+  }
+  .partner-item:nth-child(3){
+    order: 2;
+  }
+  .partner-item:nth-child(4){
+    order: 4;
+  }
 }
 
 @media screen and (min-width:940px){
