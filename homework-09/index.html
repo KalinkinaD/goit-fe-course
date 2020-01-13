@@ -8,196 +8,135 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>HW-08</title>
+    <title>HW-09</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row justify-content-md-between">
-        <div class="col-12">
-          <header class="page-header">
-            <nav class="page-nav">
-              <div class="col-xs-12 col-md-4 col-lg-3">
-                <ul class="site-navigation">
-                  <li><a class="log-in" href="#">Log in</a></li>
-                  <li><a class="sign-up" href="#">Sign up</a></li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-4 col-lg-3">
-                <a class="logo" href="#">URLAUBSGLÜCK</a>
-              </div>
-            </nav>
-            <div class="row">
-              <h2 class="title col-md-8">Share your holiday dreams</h2>
-              <p class="descr col-md-8 col-lg-6">
+    <header class="page_header">
+      <div class="container">
+        <nav
+          class="row d-flex justify-content-center flex-row-reverse justify-content-between align-items-md-center"
+        >
+          <div class="col-lg-3 col-md-4 col-12 ml-auto">
+            <ul class="menu d-flex justify-content-center">
+              <li class="menu__log"><a href="#">Log in</a></li>
+              <li class="menu__sign"><a href="#">Sign up</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 d-flex justify-content-center">
+            <a class="logo" href="#">URLAUBSGLÜCK</a>
+          </div>
+        </nav>
+        <div
+          class="row d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="offer">
+            <div class="col-lg-12">
+              <h1 class="offer__title">
+                Share your <br />
+                holiday dreams
+              </h1>
+              <p class="offer__descr">
                 And find the perfect partner to fullfill it
               </p>
-              <div class="main-button col-md-4">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="offer__main-btn">
                 <a href="#">Find your holiday partner</a>
               </div>
             </div>
-          </header>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <section class="partners">
-            <div class="row">
-              <div class="col-12">
-                <h3 class="partners-title">Meet a partner for your best holiday</h3>
-              </div>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="partner-item">
-                      <div class="img-container icon Bradley">
-                        <img
-                          class="partner-photo"
-                          src="img/Bradley1.png"
-                          alt=""
-                          width="120"
-                          height="120"
-                        />
-                      </div>
-                      <p class="parner-name">Bradley Hunter</p>
-                      <p class="partner-description">
-                        Based in Chicago. I love playing tennis and loud music.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="partner-item">
-                      <div class="img-container icon Lucas">
-                        <img
-                          src="img/Lucas.png"
-                          alt=""
-                          class="partner-photo"
-                          width="120"
-                          height="120"
-                        />
-                      </div>
-                      <p class="parner-name">Lucas Marsha</p>
-                      <p class="partner-description">
-                        I get my inspiration from nature and objects around me. I have a
-                        passion to colours, typography and skateboards.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="partner-item">
-                      <div class="img-container icon Heather">
-                        <img
-                          src="img/Heather.png"
-                          alt=""
-                          class="partner-photo"
-                          width="120"
-                          height="120"
-                        />
-                      </div>
-                      <p class="parner-name">Heather Walker</p>
-                      <p class="partner-description">
-                        I'm a happy person that loves cats and climbing on mountains.
-                      </p> 
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="partner-item">
-                      <div class="img-container icon Bradley-girl">
-                        <img
-                          src="img/Bradley.png"
-                          alt=""
-                          class="partner-photo"
-                          width="120"
-                          height="120"
-                        />
-                      </div>
-                      <p class="parner-name">Bradley Hunter</p>
-                      <p class="partner-description">
-                        Based in Chicago. I love playing tennis and loud music.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="partners-btn">
-                      <a href="#" class="partners-btn-text">See other partners</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <ul class="partners-list">
-              <li class="partner-item">
-                <div class="img-container icon Bradley">
-                  <img
-                    class="partner-photo"
-                    src="img/Bradley1.png"
-                    alt=""
-                    width="120"
-                    height="120"
-                  />
-                </div>
-                <p class="parner-name">Bradley Hunter</p>
-                <p class="partner-description">
-                  Based in Chicago. I love playing tennis and loud music.
-                </p>
-              </li>
-              <li class="partner-item">
-                <div class="img-container icon Lucas">
-                  <img
-                    src="img/Lucas.png"
-                    alt=""
-                    class="partner-photo"
-                    width="120"
-                    height="120"
-                  />
-                </div>
-                <p class="parner-name">Lucas Marsha</p>
-                <p class="partner-description">
-                  I get my inspiration from nature and objects around me. I have a
-                  passion to colours, typography and skateboards.
-                </p>
-              </li>
-              <li class="partner-item">
-                <div class="img-container icon Heather">
-                  <img
-                    src="img/Heather.png"
-                    alt=""
-                    class="partner-photo"
-                    width="120"
-                    height="120"
-                  />
-                </div>
-                <p class="parner-name">Heather Walker</p>
-                <p class="partner-description">
-                  I'm a happy person that loves cats and climbing on mountains.
-                </p>
-              </li>
-              <li class="partner-item">
-                <div class="img-container icon Bradley-girl">
-                  <img
-                    src="img/Bradley.png"
-                    alt=""
-                    class="partner-photo"
-                    width="120"
-                    height="120"
-                  />
-                </div>
-                <p class="parner-name">Bradley Hunter</p>
-                <p class="partner-description">
-                  Based in Chicago. I love playing tennis and loud music.
-                </p>
-              </li>
-            </ul>
-            <div class="partners-btn">
-              <a href="#" class="partners-btn-text">See other partners</a>
-            </div> -->
-          </section>
+      <section class="partners">
+        <div class="row">
+          <h3 class="col-12 partners__title">
+            Meet a partner for your best holiday
+          </h3>
         </div>
-      </div>
+        <div
+          class="row d-flex flex-wrap justify-content-center flex-xl-row"
+        >
+          <div class="col-lg-3 partners__item col-8 col-md-5 order-md-1">
+            <div class="m-auto partners__img-container icon Bradley">
+              <img
+                class="partners__photo"
+                src="img/Bradley1.png"
+                alt=""
+                width="120"
+                height="120"
+              />
+            </div>
+            <p class="parners__name">Bradley Hunter</p>
+            <p class="partners__description">
+              Based in Chicago. I love playing tennis and loud music.
+            </p>
+          </div>
+          <div class="col-lg-3 partners__item col-8 col-md-5 order-md-3">
+            <div class="m-auto partners__img-container icon Lucas">
+              <img
+                class="partners__photo"
+                src="img/Lucas.png"
+                alt=""
+                width="120"
+                height="120"
+              />
+            </div>
+            <p class="parners__name">Lucas Marsha</p>
+            <p class="partners__description">
+              I get my inspiration from nature and objects around me. I have a
+              passion to colours, typography and skateboards.
+            </p>
+          </div>
+          <div class="col-lg-3 partners__item col-8 col-md-5 order-md-2">
+            <div class="m-auto partners__img-container icon Heather">
+              <img
+                class="partners__photo"
+                src="img/Heather.png"
+                alt=""
+                width="120"
+                height="120"
+              />
+            </div>
+            <p class="parners__name">Heather Walker</p>
+            <p class="partners__description">
+              I'm a happy person that loves cats and climbing on mountains.
+            </p>
+          </div>
+          <div class="col-lg-3 partners__item col-8 col-md-5 order-md-4">
+            <div class="partners__img-container icon Bradley-girl m-auto">
+              <img
+                class="partners__photo"
+                src="img/Bradley.png"
+                alt=""
+                width="120"
+                height="120"
+              />
+            </div>
+            <p class="parners__name">Bradley Hunter</p>
+            <p class="partners__description">
+              Based in Chicago. I love playing tennis and loud music.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-lg-4 m-auto d-flex justify-content-center align-items-center"
+          >
+            <div class="partners__btn">
+              <a href="#">See other partners</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
