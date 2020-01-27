@@ -214,22 +214,22 @@ font-family: 'Roboto', sans-serif;
 font-size: 15px;
 color: #9f9f9f;
 }
-.icon-alarm {
+.services__icon--alarm {
     background-image: url(../img/icons/icon-alarm.svg);
 }
-.icon-linegraph {
+.services__icon--linegraph {
     background-image: url(../img/icons/icon-graph.svg);
 }
-.icon-computer {
+.services__icon--computer {
 background-image: url(../img/icons/icon-computer.svg);
 }
-.icon-book{
+.services__icon--book{
 background-image: url(../img/icons/icon-book.svg);
 }
-.icon-home{
+.services__icon--home{
 background-image: url(../img/icons/icon-home.svg);
 }
-.icon-image{
+.services__icon--image{
 background-image: url(../img/icons/icon-image.svg);
 }
 .team__descr {
