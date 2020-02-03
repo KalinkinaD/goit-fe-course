@@ -1,0 +1,53 @@
+.site-navigation {
+    @extend %list;
+    @include center-flex ('ver');
+    justify-content: space-between;
+    text-transform: uppercase;
+
+}
+.site-navigation__item {
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+
+    &--svg{
+        @extend %link;
+        width: 16px;
+        padding-left: 48px;
+        cursor:pointer;
+    
+        &:hover,
+        &:focus {
+        fill: $hover-color; 
+    }
+    }
+}
+.site-navigation__link {
+    @extend %link;
+    list-style: none;
+    font-size: 14px;
+    font-family: $main-font-stack;
+    color: $main-color;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover,
+  &:focus {
+    color: $hover-color;
+    text-decoration: underline;
+    -webkit-text-decoration-style: solid;
+            text-decoration-style: solid;    
+}
+}
+.site-navigation__svg {
+    fill: $main-color;
+    width: 16px;
+    height: 16px;
+   
+    &:hover,
+&:focus {
+    fill: $hover-color;
+}
+}

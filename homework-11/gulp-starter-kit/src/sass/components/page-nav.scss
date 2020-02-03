@@ -1,0 +1,6 @@
+.page-nav {
+    @include center-flex ('ver');
+    justify-content: space-around;
+    min-height: 92px;
+    margin-bottom: 166px;
+}
