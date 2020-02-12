@@ -5,23 +5,25 @@
     text-transform: uppercase;
 
 }
+
 .site-navigation__item {
     width: 100px;
     text-align: center;
     cursor: pointer;
 
-    &--svg{
+    &--svg {
         @extend %link;
         width: 16px;
         padding-left: 48px;
-        cursor:pointer;
-    
+        cursor: pointer;
+
         &:hover,
         &:focus {
-        fill: $hover-color; 
-    }
+            fill: $hover-color;
+        }
     }
 }
+
 .site-navigation__link {
     @extend %link;
     list-style: none;
@@ -34,20 +36,21 @@
     cursor: pointer;
 
     &:hover,
-  &:focus {
-    color: $hover-color;
-    text-decoration: underline;
-    -webkit-text-decoration-style: solid;
-            text-decoration-style: solid;    
+    &:focus {
+        color: $hover-color;
+        text-decoration: underline;
+        -webkit-text-decoration-style: solid;
+        text-decoration-style: solid;
+    }
 }
-}
+
 .site-navigation__svg {
     fill: $main-color;
     width: 16px;
     height: 16px;
-   
+
     &:hover,
-&:focus {
-    fill: $hover-color;
-}
+    &:focus {
+        fill: $hover-color;
+    }
 }

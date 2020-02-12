@@ -3,24 +3,28 @@
     max-width: 1201px;
     margin: 0 auto;
 }
+
 .ftr-container {
     border-top: 1px solid #e5e5e5;
     @include center-flex ('ver');
     justify-content: space-between;
     height: 62px;
 }
-.ftr__name{
+
+.ftr__name {
     font-family: $main-font-stack;
     font-size: 14px;
     line-height: 1.2;
     color: $title-color;
 }
-.ftr__link{
+
+.ftr__link {
     @extend %link;
     color: $decoration-color-lighter;
     display: inline-block;
 }
-.ftr__form{
+
+.ftr__form {
     width: 380px;
     height: 40px;
     display: -webkit-box;
@@ -28,10 +32,11 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }
-.ftr__form--email{
+
+.ftr__form--email {
     width: 230px;
     border: 1px solid $border-color;
     padding-left: 12px;
@@ -41,7 +46,8 @@
     font-weight: 300;
     font-size: 15px;
 }
-.ftr__form--button{
+
+.ftr__form--button {
     @include center-flex ('all');
     width: 150px;
     border: none;

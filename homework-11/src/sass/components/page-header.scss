@@ -1,12 +1,16 @@
-.page-header{
+.page-header {
     padding-top: 25px;
     padding-bottom: 230px;
-    @include  bg-image($path: '../images/picture.png', $size: cover, $repeat: no-repeat, $pos: center);
-    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2ddpx) {
+    @include bg-image($path: '../images/picture.png', $size: cover, $repeat: no-repeat, $pos: center);
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
         & {
             background-image: url(../images/picture@2x.png);
             background-position: center;
         }
-        
+
     }
 }

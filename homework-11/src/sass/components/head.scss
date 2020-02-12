@@ -1,26 +1,29 @@
 .head {
-    display: block;
-    color: $main-color;
-    text-align: center;
+  display: block;
+  color: $main-color;
+  text-align: center;
 }
+
 .head__title {
-    font-size: 150px;
-    font-family: $main-font-stack;
-    font-weight: bold;
+  font-size: 150px;
+  font-family: $main-font-stack;
+  font-weight: bold;
   text-transform: uppercase;
   line-height: 0.933;
   margin: 0 auto 110px;
-    max-width: 860px;
+  max-width: 860px;
 }
+
 .head__descr {
-    font-size: 72px;
-    font-family: $descr-font;
-    line-height: 1.2; 
-    padding-bottom: 50px; 
-    text-transform: none;
+  font-size: 72px;
+  font-family: $descr-font;
+  line-height: 1.2;
+  padding-bottom: 50px;
+  text-transform: none;
 }
+
 .head__btn {
-    font-size: 14px;
+  font-size: 14px;
   font-family: $main-font-stack;
   font-weight: bold;
   text-transform: uppercase;
